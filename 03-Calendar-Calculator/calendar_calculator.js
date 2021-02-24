@@ -1,60 +1,64 @@
 //insert your pseudocode below
 /*
 here
-Specify the month
-Then specify the day in this month 
-if the monthe is January then the day of the month is equal to the requested number
-if the month is February then the requested number is the day of the month plus 31
-if the if the month is March then the requested number is the day of the month plus 31 for January plus 28 for February
-and so on.
-Calculate the number of the year
-print the result 
+1- Specify the month and the day of the month in 2 variables 
+2- the variable of the month will contain a name which will be the name of the month
+3- the second variable will contain a number which is the day of the month
+4- For every month we define how many days there is before. this means february will be equal to 31. 
+    then march will be equal to the sum of the previous months 31 + 28 .
+5- we need first to calculate the days of all the months before the name of the month.
+    6- We check the name of the month against the name that we have.      
+7- Claculate the requested number by adding the day of the month with the days from the months before in the same year.
+8- print .
+Example:
+Variable1 = April 
+Variable2 = 4
+Days before = 31 + 28 + 31 = 90
+Result = 90 + 4 = 94
+print  
 */
 
 //Insert your code below
-var number, month;
+var Month, Day, Result;
 
-// Describe this function...
-function cal() {
-  if (month == 'January') {
-    number = 0 + number;
-  }
-  if (month == 'February') {
-    number = 31 + number;
-  }
-  if (month == 'March') {
-    number = 59 + number;
-  }
-  if (month == 'April') {
-    number = 90 + number;
-  }
-  if (month == 'May') {
-    number = 120 + number;
-  }
-  if (month == 'June ') {
-    number = 151 + number;
-  }
-  if (month == 'July') {
-    number = 181 + number;
-  }
-  if (month == 'August') {
-    number = 212 + number;
-  }
-  if (month == 'September') {
-    number = 243 + number;
-  }
-  if (month == 'October') {
-    number = 273 + number;
-  }
-  if (month == 'November') {
-    number = 304 + number;
-  }
-  if (month == 'December') {
-    number = 334 + number;
-  }
-  window.alert(number);
-  return number;
+
+Month = 'November';
+Day = 28;
+
+if (Month == 'January') {
+  Result = 0 + Day;
 }
-
-
-true;
+if (Month == 'February') {
+  Result = 31 + Day;
+}
+if (Month == 'March') {
+  Result = 59 + Day;
+}
+if (Month == 'April') {
+  Result = 90 + Day;
+}
+if (Month == 'May') {
+  Result = 120 + Day;
+}
+if (Month == 'June') {
+  Result = 151 + Day;
+}
+if (Month == 'July') {
+  Result = 181 + Day;
+}
+if (Month == 'August') {
+  Result = 212 + Day;
+}
+if (Month == 'September') {
+  Result = 243 + Day;
+}
+if (Month == 'October') {
+  Result = 273 + Day;
+}
+if (Month == 'November') {
+  Result = 304 + Day;
+}
+if (Month == 'December') {
+  Result = 334 + Day;
+}
+window.alert(Result)
